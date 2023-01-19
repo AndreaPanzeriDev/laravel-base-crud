@@ -3,17 +3,16 @@
 
 @section('main')
     <main class="mainE">
-        <div><button>CURRENT SERIES</button></div>
         <div class="cards">
             @foreach ($comics_info as $key => $item)
                 <div class="card">
                     <img src="{{ $item['thumb'] }}" alt="picture">
-                    <h6><a href="{{ route('comic', compact('key')) }}">{{ $item['title'] }}</a> </h6>
+                    <h6><a href="{{ route('comics.show', $key) }}">{{ $item['title'] }}</a> </h6>
                 </div>
             @endforeach
         </div>
         <div class="btl">
-            <button class="loadmore">LOAD MORE</button>
+            <a href="{{route('comics.create')}}"><button>ADD COMIC</button></a>
         </div>
 
         <div class="containerY">
