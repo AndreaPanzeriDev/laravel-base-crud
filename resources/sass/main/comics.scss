@@ -1,0 +1,27 @@
+.infoAndPicture,
+.infoBackground{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-left: 3.6rem;
+    justify-content: space-around;
+}
+
+.infoAndPicture{
+    position: relative;
+}
+
+.infoAndPicture > div > img{
+    position: absolute;
+    top: -65%;
+}
+
+.westSide{
+    width: 60%;
+}
+
+
+.boxComics{
+    width: 45%;
+    margin-bottom: 3rem;
+}

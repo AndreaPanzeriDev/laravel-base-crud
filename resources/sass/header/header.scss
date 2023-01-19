@@ -1,0 +1,76 @@
+.box {
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+
+/*****************************
+               LISTA
+*******************************/
+
+.lista {
+    align-self: center;
+}
+
+.lista > ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin: auto 10px;
+}
+
+.lista > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista > ul > li > a:hover {
+    color: rgb(64, 174, 211);
+    border-bottom: 5px solid rgb(64, 174, 211);
+    padding-bottom: 25px;
+}
+
+/********************
+       CONTENT
+*********************/
+.content {
+    background-color: #1f1f1f;
+    text-align: center;
+}
+
+.esistential_problem {
+    padding: 2.5% 0;
+}
+
+
+.jumbotron {
+    background-image: url('../../images/jumbotron.jpg');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+.jumbotron>button {
+    color: white;
+    font-weight: bold;
+    border: 2px solid #007cf2;
+    background-color: #007cf2;
+    padding: 10px 40px;
+    position: absolute;
+    left: 15%;
+    bottom: -5%;
+}
+
+
+

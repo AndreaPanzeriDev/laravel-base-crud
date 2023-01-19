@@ -1,0 +1,110 @@
+/********************
+       MAIN
+*********************/
+.mainE {
+    background-color: #1f1f1f;
+    position: relative;
+}
+
+.mainE > div > button{
+    position: absolute;
+    top: -2.5%;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #007cf2;
+    background-color: #007cf2;
+    padding: 10px 40px;
+    left: 15%;
+
+}
+
+
+
+/********************
+       CARDS
+*********************/
+
+.cards {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+
+.loadmore {
+    color: white;
+    background-color: #007cf2;
+    border: 2px solid #007cf2;
+    padding: 10px 40px;
+    align-self: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/********************
+        CARD
+*********************/
+
+.card {
+    width: calc(100% / 6 - 5px);
+    text-align: center;
+    background-color: #1f1f1f;
+    border: none;
+}
+
+
+h6 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+.btl {
+    display: flex;
+    justify-content: center;
+}
+
+.containerY {
+    background-color: #007cf2;
+}
+
+
+/*****************************
+               LISTA
+*******************************/
+
+.containerY > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    margin-top: 1rem;
+
+}
+
+.container > ul li {
+    display: flex;
+    align-items: center;
+}
+
+.container > ul li img {
+    height: 50%;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}

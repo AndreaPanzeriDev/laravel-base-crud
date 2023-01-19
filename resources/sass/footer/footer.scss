@@ -1,0 +1,94 @@
+.Utilities {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../images/footer-bg.jpg');
+}
+
+/*******************
+        LISTA
+  *******************/
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    color: white;
+}
+
+a {
+    color: rgb(179, 176, 176);
+    text-decoration: none;
+}
+
+/*******************
+      LINK SPACE
+  *******************/
+
+.linkspace {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkspace>div {
+    display: flex;
+    padding: 20px;
+}
+
+.cutimage {
+    background-image: url('../../images/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+/*******************
+        FOOTER
+  *******************/
+.singUp {
+    width: 100vw;
+    z-index: 0;
+    background-color: #333333;
+
+}
+
+.correction {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonSingUp {
+    color: white;
+    background-color: #333333;
+    border: 2px solid #007cf2;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.followUs {
+    color: #007cf2;
+}
+
+.dflex {
+    display: flex;
+}
+
+.vcenterItems {
+    align-items: center;
+}
+
+.vcenterSelf {
+    align-self: center;
+}
+
+.imgSettings img {
+    margin: auto 10px;
+}
