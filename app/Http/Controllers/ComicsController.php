@@ -10,7 +10,6 @@ use Symfony\Component\VarDumper\Cloner\Data;
 class ComicsController extends Controller
 {
     public function show($id){
-        $id = $id + 1;
         $single_comic_info = Comic::findOrFail($id);
         return view('comics', compact('single_comic_info'));
     }
@@ -28,6 +27,13 @@ class ComicsController extends Controller
 
         $comics_info = Comic::all();
         return view('home', compact('comics_info'));
+    }
+
+    public function destroy($id){
+        $comicTD = Comic::findOrFail($id);
+        $comicTD -> delete();
+
+        return redirect()->route('home');
     }
 
 }

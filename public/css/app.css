@@ -305,3 +305,40 @@ a {
     width: 45%;
     margin-bottom: 3rem;
 }
+
+/***********************
+        CHANGES
+************************/
+
+.changes{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.changes button{
+    color: white;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+
+.modify{
+    background-color: gold;
+    border: 1px solid gold;
+}
+
+.modify:hover{
+    background-color: rgb(208, 178, 9);
+    border: 1px solid rgb(208, 178, 9);;
+}
+
+.delete{
+    background-color: red;
+    border: 1px solid red;
+}
+
+.delete:hover{
+    background-color: rgb(169, 7, 7);
+    border: 1px solid rgb(169, 7, 7);
+}
+

@@ -2,7 +2,7 @@
 
 @section('main')
     <div class="infoAndPicture">
-        <div><img src={{$single_comic_info['thumb']}} alt=""></div>
+        <div><img src={{ $single_comic_info['thumb'] }} alt=""></div>
         <br>
         <div class="westSide">
             <h2>{{ $single_comic_info['title'] }}</h2>
@@ -40,7 +40,7 @@
                     <div class="w-50">
                         <h5>Art by:</h5>
                     </div>
-                    <div >
+                    <div>
                         <p>Andrea Panzeri</p>
                     </div>
                 </div>
@@ -63,19 +63,33 @@
             <hr>
             <div class="d-flex justify-content-between">
                 <div>Series:</div>
-                <div>{{$single_comic_info['series']}}</div>
+                <div>{{ $single_comic_info['series'] }}</div>
             </div>
             <hr>
             <div class="d-flex justify-content-between">
                 <div>U.S. Price</div>
-                <div>{{$single_comic_info['price']}}</div>
+                <div>{{ $single_comic_info['price'] }}</div>
             </div>
             <hr>
             <div class="d-flex justify-content-between">
                 <div>On Sale Date:</div>
-                <div>{{$single_comic_info['sale_date']}}</div>
+                <div>{{ $single_comic_info['sale_date'] }}</div>
             </div>
             <hr>
         </div>
     </div>
+    <form action="{{route('comics.destroy', $single_comic_info['id'])}}" method="POST">
+
+        @csrf
+        @method('DELETE')
+
+        <div class="changes">
+            <a href="">
+                <button class="modify" type="submit">Modify</button>
+            </a>
+            <a href="">
+                <button class="delete" type="submit">Delete</button>
+            </a>
+        </div>
+    </form>
 @endsection
