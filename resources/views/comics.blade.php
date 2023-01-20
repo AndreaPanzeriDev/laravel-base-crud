@@ -78,18 +78,29 @@
             <hr>
         </div>
     </div>
-    <form action="{{route('comics.destroy', $single_comic_info['id'])}}" method="POST">
 
-        @csrf
-        @method('DELETE')
 
-        <div class="changes">
+    <div class="forms">
+
+        <form action="{{route('comics.edit', $single_comic_info['id'])}}">
+
+            @csrf
+
             <a href="">
                 <button class="modify" type="submit">Modify</button>
             </a>
+
+        </form>
+
+        <form action="{{ route('comics.destroy', $single_comic_info['id']) }}" method="POST">
+
+            @csrf
+            @method('DELETE')
             <a href="">
                 <button class="delete" type="submit">Delete</button>
             </a>
-        </div>
-    </form>
+        </form>
+
+
+    </div>
 @endsection

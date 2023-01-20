@@ -36,4 +36,18 @@ class ComicsController extends Controller
         return redirect()->route('home');
     }
 
+
+    public function edit($id){
+        $comicTD = Comic::findOrFail($id);
+        return view('CRUD.edit', compact('comicTD'));
+    }
+
+    public function update(Request $request, $id){
+        $info = $request->all();
+        $comicC = Comic::findOrFail($id);
+        $comicC -> update($info);
+
+        return redirect()->route('home');
+    }
+
 }

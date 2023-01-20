@@ -27,18 +27,20 @@
 }
 
 /***********************
-        CHANGES
+        FORMS
 ************************/
 
-.changes{
-    text-align: center;
+.forms{
+    justify-content: center;
     margin-bottom: 1rem;
+    display: flex;
 }
 
-.changes button{
+.forms button{
     color: white;
     padding: 5px 25px;
     border-radius: 10px;
+    margin: 0 5px;
 }
 
 
